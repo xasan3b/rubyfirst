@@ -5,7 +5,7 @@ last_name = gets.chomp
 puts"how old are you"
 age = gets.chomp
 puts "hello #{first_name} #{last_name}"
-name = first_name + " " + last_name
+name = first_name ++ last_name
 puts "your age after 10 years will be #{age.to_i + 10}"
 puts "your age after 20 years will be #{age.to_i + 20}"
 puts "your age after 30 years will be #{age.to_i + 30}"

@@ -2,6 +2,16 @@ puts "please enter your name"
 first_name = gets.chomp
 puts "please inter your last name"
 last_name = gets.chomp
+#gender
+puts "whats your gender"
+gender = gets.chomp
+
+gender = case
+when gender.downcase == "male" 
+puts " hello sir #{ first_name + " " + last_name} "
+else 
+    puts "hello madam #{first_name + " " + last_name}"
+end
 puts"how old are you"
 age = gets.chomp.to_i
 puts "hello #{first_name} #{last_name}"
@@ -23,18 +33,9 @@ puts "your full name reversed is #{name.reverse}"
 puts "you full name has #{name.length - 1} Chaaractars"
 puts "your full name in uppercase is #{name.upcase}"
 
-#gender
-puts "whats your gender"
-gender = gets.chomp
 
-gender = case
-when gender.downcase == "male" 
-puts " hello sir"
-else 
-    puts "hello madam"
-end
 
-if age == even
+
     
 
 
